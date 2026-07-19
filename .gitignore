@@ -1,0 +1,17 @@
+# Godot 4
+.godot/
+
+# Mono (unused for this project)
+.mono/
+
+# Export presets
+export_presets.cfg
+
+# Linux temporary files
+*~
+
+# macOS
+.DS_Store
+
+# Windows
+Thumbs.db

@@ -1,0 +1,35 @@
+[gd_scene format=3 uid="uid://dn31jbi3eeg64"]
+
+[ext_resource type="PackedScene" uid="uid://c6vqa10veisys" path="res://scenes/Player.tscn" id="1_o5qli"]
+[ext_resource type="Texture2D" uid="uid://dbqqv10jewd40" path="res://assets/sprites/player_red.jpg" id="2_0wfyh"]
+
+[node name="Main" type="Node2D" unique_id=1890500339]
+
+[node name="Maze" type="Node2D" parent="." unique_id=1365447796]
+
+[node name="Goal" type="Node2D" parent="." unique_id=1292313816]
+
+[node name="Players" type="Node2D" parent="." unique_id=1002399499]
+
+[node name="Player1" parent="Players" unique_id=478416032 instance=ExtResource("1_o5qli")]
+position = Vector2(100, 100)
+move_up = "move_up_p1"
+move_down = "move_down_p1"
+move_left = "move_left_p1"
+move_right = "move_right_p1"
+
+[node name="Player2" parent="Players" unique_id=1319928976 instance=ExtResource("1_o5qli")]
+position = Vector2(1000, 600)
+move_up = "move_up_p2"
+move_down = "move_down_p2"
+move_left = "move_left_p2"
+move_right = "move_right_p2"
+
+[node name="Sprite2D" parent="Players/Player2" index="1" unique_id=1782781028]
+texture = ExtResource("2_0wfyh")
+
+[node name="UI" type="CanvasLayer" parent="." unique_id=1325668336]
+
+[node name="Camera2D" type="Camera2D" parent="." unique_id=844606812]
+
+[editable path="Players/Player2"]
